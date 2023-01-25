@@ -24,6 +24,7 @@ button{
     border: 0px;
     border-radius: 5px;
     padding: 5px 10px;
+    font-weight: bold;
 }
 .lis{
     border: 1px #ccc solid ;
@@ -60,4 +61,33 @@ button{
     text-decoration: line-through;
 }.itemShop{
     font-style: italic;
+}
+
+/* THIS IS WHAT I WILL ADD */
+.recuadros{
+    border: 2px solid grey;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+li{
+    padding-top: 10px;
+    font-style: italic;
+    font-weight: bold;
+    color: gray;
+    font-size: larger;
+}
+
+.checked{
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    color:gray
+}
+
+p{
+    text-decoration: none;
+}
+
+.check{
+    text-decoration: none;
 }
