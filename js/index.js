@@ -7,15 +7,18 @@ function AddItem(e){
     e.preventDefault()
     let newItem = $("#newText").val()
 
-    $(".Lista").append(` <div class=recuadros> <li> ${newItem} <p></p>
+    $(".Lista").append(` <div class=recuadros> <li> <p id="item">${newItem}</p> <p></p>
     <button class="check" type="submit">check</button> 
     <button class="delete" type="submit">delete</button> <p></p> </li> </div> `)
 }
 
 // Punto 2)
 function tachar(){
-    let parent_li = $(this).parent()
-    parent_li.toggleClass('checked')
+    // let parent_li = $(this).parent()
+    // parent_li.toggleClass('checked')
+
+    let sibling_button = $(this).siblings("#item")
+    sibling_button.toggleClass('checked')
 }
 
 // Punto 3)
